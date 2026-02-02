@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Hanahuwaida</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>body{font-family:"Plus Jakarta Sans",sans-serif}</style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-extrabold text-indigo-600 tracking-tight">Hanahuwaida<span class="text-slate-900">.</span></a>
+            <a href="index.html" class="text-slate-600 hover:text-indigo-600 font-medium flex items-center">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Kembali
+            </a>
+        </div>
+    </nav>
+
+    <section class="pt-32 pb-20 px-6 min-h-screen">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-12">
+                <h1 class="text-4xl font-bold mb-2 capitalize" id="gallery-title">Loading...</h1>
+                <p class="text-slate-500" id="gallery-desc">Menampilkan koleksi karya terpilih.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="gallery-container">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Get Category from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const category = urlParams.get("cat");
+
+        fetch("data.json")
+            .then(res => res.json())
+            .then(data => {
+                const items = data.galleries[category];
+                const catInfo = data.creative_categories.find(c => c.id === category);
+
+                if (items && catInfo) {
+                    document.getElementById("gallery-title").innerText = catInfo.title;
+                    document.getElementById("gallery-desc").innerText = catInfo.description;
+                    
+                    const container = document.getElementById("gallery-container");
+                    items.forEach(item => {
+                        const html = `
+                        <div class="bg-white rounded-xl shadow-sm hover:shadow-lg transition border border-slate-100 overflow-hidden flex flex-col">
+                            <div class="h-48 bg-slate-100 flex items-center justify-center text-slate-400 text-4xl">
+                                ???
+                            </div>
+                            <div class="p-6 flex-grow flex flex-col">
+                                <h3 class="font-bold text-lg mb-2">${item.title}</h3>
+                                <p class="text-slate-500 text-sm mb-4 line-clamp-2">${item.desc}</p>
+                                <a href="${item.link}" target="_blank" class="mt-auto bg-slate-900 text-white text-center py-2 rounded-lg text-sm font-bold hover:bg-slate-800 transition">
+                                    Lihat Detail
+                                </a>
+                            </div>
+                        </div>`;
+                        container.innerHTML += html;
+                    });
+                } else {
+                    document.getElementById("gallery-title").innerText = "Kategori Tidak Ditemukan";
+                    document.getElementById("gallery-container").innerHTML = "<p>Silakan kembali ke halaman utama.</p>";
+                }
+            });
+    </script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanahuwaida Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: "Plus Jakarta Sans", sans-serif; }
+        .nav-active { color: #4f46e5; font-weight: 700; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b transition-all duration-300" id="navbar">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-xl font-extrabold text-indigo-600 tracking-tight" id="nav-logo">Hanahuwaida.</a>
+            <div class="hidden md:flex space-x-8 font-medium text-slate-600">
+                <a href="#home" class="nav-link hover:text-indigo-600 transition">Beranda</a>
+                <a href="#about" class="nav-link hover:text-indigo-600 transition">Tentang</a>
+                <a href="#projects" class="nav-link hover:text-indigo-600 transition">Web Apps</a>
+                <a href="#creative" class="nav-link hover:text-indigo-600 transition">Creative</a>
+                <a href="#contact" class="bg-indigo-600 text-white px-5 py-2 rounded-full hover:bg-indigo-700 transition">Kontak</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-32 pb-20 px-6 min-h-screen flex items-center justify-center">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="bg-indigo-50 text-indigo-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-4 inline-block">Education & Web Development</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight text-slate-900 leading-tight" id="hero-tagline">
+                Loading...
+            </h1>
+            <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed" id="hero-bio">
+                Loading...
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#projects" class="bg-slate-900 text-white px-8 py-3 rounded-full font-bold hover:bg-slate-800 transition shadow-lg shadow-slate-200">Lihat Portfolio</a>
+                
+                <!-- TOMBOL UNDUH CV -->
+                <a href="#" id="hero-cv" target="_blank" class="bg-indigo-600 text-white px-8 py-3 rounded-full font-bold hover:bg-indigo-700 transition shadow-lg shadow-indigo-100 flex items-center justify-center">
+                    <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    Unduh CV
+                </a>
+
+                <a href="#contact" class="bg-white border border-slate-200 text-slate-700 px-8 py-3 rounded-full font-bold hover:bg-slate-50 transition">Hubungi Saya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section Static Structure -->
+    <section id="about" class="py-20 bg-white px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                <div class="absolute -top-4 -left-4 w-24 h-24 bg-indigo-100 rounded-full blur-xl opacity-70"></div>
+                <div class="relative bg-slate-50 p-8 rounded-3xl border border-slate-100">
+                    <h3 class="text-2xl font-bold mb-4">Latar Belakang</h3>
+                    <p class="text-slate-600 leading-relaxed mb-4">
+                        Saya memiliki pengalaman terlibat dalam berbagai proyek pengembangan website dan solusi digital. Fokus utama saya adalah menciptakan karya yang memadukan kejelasan fungsi dan estetika.
+                    </p>
+                    <p class="text-slate-600 leading-relaxed">
+                        Saat ini, saya sedang menempuh pendidikan Magister untuk memperdalam pemahaman saya tentang teknologi pendidikan dan pengembangan sistem.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-3xl font-bold mb-6">Pendidikan & Pengalaman</h2>
+                <ul class="space-y-6 border-l-2 border-slate-200 pl-6 relative">
+                    <li class="relative">
+                        <div class="absolute -left-[31px] bg-white border-2 border-indigo-600 w-4 h-4 rounded-full mt-1.5"></div>
+                        <h4 class="font-bold text-lg">Magister Pendidikan Informatika</h4>
+                        <p class="text-indigo-600 font-semibold">Pascasarjana (On-going)</p>
+                        <p class="text-slate-500 text-sm mt-1">Fokus pada teknologi pembelajaran lanjut dan rekayasa perangkat lunak.</p>
+                    </li>
+                    <li class="relative">
+                        <div class="absolute -left-[31px] bg-slate-200 w-4 h-4 rounded-full mt-1.5"></div>
+                        <h4 class="font-bold text-lg">Pendidikan Informatika (S1)</h4>
+                        <p class="text-slate-600 font-semibold">Universitas Negeri Jakarta</p>
+                    </li>
+                    <li class="relative">
+                        <div class="absolute -left-[31px] bg-slate-200 w-4 h-4 rounded-full mt-1.5"></div>
+                        <h4 class="font-bold text-lg">Web Development & Teaching</h4>
+                        <p class="text-slate-600 font-semibold">Pengalaman Profesional</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-slate-50 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-2 tracking-tight">Pengembangan Web</h2>
+                <p class="text-slate-500">Aplikasi web dan sistem informasi yang telah saya bangun.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8" id="web-projects-container">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="creative" class="py-20 bg-white px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold mb-2 tracking-tight">Desain & Edukasi</h2>
+                <p class="text-slate-500">Karya desain grafis, media pembelajaran, dan modul ajar.</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6" id="creative-projects-container">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-slate-900 text-white py-24 px-6 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Tertarik bekerja sama?</h2>
+            <div class="flex flex-wrap justify-center gap-6 mb-16" id="contact-buttons">
+                <!-- Buttons injected by JS -->
+            </div>
+            <div class="flex justify-center gap-8 text-2xl text-slate-400" id="social-links">
+                <!-- Links injected by JS -->
+            </div>
+            <div class="mt-12 pt-8 border-t border-slate-800 text-slate-500 text-sm">
+                &copy; 2026 <span id="footer-name">Hanahuwaida</span>. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        fetch("data.json")
+            .then(response => response.json())
+            .then(data => {
+                // Update Profile
+                document.getElementById("nav-logo").innerHTML = `${data.profile.name}<span class="text-slate-900">.</span>`;
+                document.getElementById("hero-tagline").innerHTML = data.profile.tagline.replace("Bermanfaat", `<span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Bermanfaat</span>`);
+                document.getElementById("hero-bio").innerText = data.profile.bio;
+                document.getElementById("footer-name").innerText = data.profile.name;
+                
+                // Set CV Link
+                document.getElementById("hero-cv").href = data.profile.cv_link;
+
+                // Render Web Projects
+                const webContainer = document.getElementById("web-projects-container");
+                webContainer.innerHTML = "";
+                data.web_projects.forEach(project => {
+                    const featuredBadge = project.featured ? `<div class="absolute top-4 right-4 bg-indigo-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">Featured</div>` : "";
+                    const techStack = project.tech.map(t => `<span class="px-2 py-1 bg-slate-100 text-slate-700 text-[10px] font-bold uppercase tracking-wider rounded">${t}</span>`).join("");
+
+                    const html = `
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-500 flex flex-col border border-slate-100 relative transform hover:-translate-y-2">
+                        ${featuredBadge}
+                        <div class="${project.colors.bg} h-56 flex items-center justify-center overflow-hidden group-hover:bg-opacity-80 transition">
+                             <span class="text-6xl">${project.colors.icon}</span>
+                        </div>
+                        <div class="p-8 flex-grow flex flex-col">
+                            <div class="flex flex-wrap gap-2 mb-4">${techStack}</div>
+                            <h3 class="text-2xl font-bold mb-3 ${project.colors.text} transition">${project.title}</h3>
+                            <p class="text-slate-600 mb-6 text-sm line-clamp-3">${project.description}</p>
+                            <a href="${project.link}" target="_blank" class="mt-auto font-bold ${project.colors.text} text-sm flex items-center hover:underline">
+                                Lihat Demo <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                            </a>
+                        </div>
+                    </div>`;
+                    webContainer.innerHTML += html;
+                });
+
+                // Render Creative Categories
+                const creativeContainer = document.getElementById("creative-projects-container");
+                creativeContainer.innerHTML = "";
+                const colorMap = {
+                    "purple": "bg-purple-100 text-purple-600",
+                    "pink": "bg-pink-100 text-pink-600",
+                    "blue": "bg-blue-100 text-blue-600",
+                    "teal": "bg-teal-100 text-teal-600"
+                };
+                
+                if(data.creative_categories) {
+                    data.creative_categories.forEach(cat => {
+                        const colorClass = colorMap[cat.color] || "bg-gray-100 text-gray-600";
+                        const html = `
+                        <a href="gallery.html?cat=${cat.id}" class="group border border-slate-100 rounded-xl p-6 hover:shadow-lg transition cursor-pointer block text-center sm:text-left">
+                            <div class="w-12 h-12 ${colorClass} rounded-lg flex items-center justify-center mb-4 text-2xl mx-auto sm:mx-0">
+                                ${cat.icon}
+                            </div>
+                            <h3 class="font-bold text-lg mb-2 group-hover:text-indigo-600 transition">${cat.title}</h3>
+                            <p class="text-slate-500 text-sm">${cat.description}</p>
+                        </a>`;
+                        creativeContainer.innerHTML += html;
+                    });
+                }
+
+                // Render Contact
+                const contactDiv = document.getElementById("contact-buttons");
+                contactDiv.innerHTML = `
+                    <a href="${data.profile.social.whatsapp}" target="_blank" class="flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full font-bold hover:bg-green-700 transition"><span>WhatsApp</span></a>
+                    <a href="${data.profile.social.email}" class="flex items-center gap-2 bg-slate-800 text-white px-6 py-3 rounded-full font-bold hover:bg-slate-700 transition border border-slate-700"><span>Email Me</span></a>
+                `;
+
+                const socialDiv = document.getElementById("social-links");
+                socialDiv.innerHTML = `
+                    <a href="${data.profile.social.github}" class="hover:text-white transition">GH</a>
+                    <a href="${data.profile.social.behance}" class="hover:text-white transition">Be</a>
+                    <a href="${data.profile.social.linkedin}" class="hover:text-white transition">In</a>
+                `;
+            });
+
+        window.addEventListener("scroll", function() {
+            const navbar = document.getElementById("navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("shadow-md", "py-2");
+                navbar.classList.remove("py-4");
+            } else {
+                navbar.classList.remove("shadow-md", "py-2");
+                navbar.classList.add("py-4");
+            }
+        });
+    </script>
+</body>
+</html>

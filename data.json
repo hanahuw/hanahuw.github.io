@@ -1,0 +1,90 @@
+{
+    "profile": {
+        "name": "Hanahuwaida",
+        "role": "Software Developer",
+        "tagline": "Membangun Solusi Digital yang Bermanfaat.",
+        "cv_link": "#",
+        "bio": "Lulusan Pendidikan Informatika UNJ dengan pengalaman dalam pendidikan vokasi dan pengembangan web. Saya menggabungkan fungsionalitas dan kebutuhan pengguna dalam setiap baris kode.",
+        "social": {
+            "whatsapp": "http://wa.me/6285156854316",
+            "email": "mailto:email@example.com",
+            "github": "https://github.com/hanahuw",
+            "behance": "http://behance.net/hanahuw",
+            "linkedin": "#"
+        }
+    },
+    "web_projects": [
+        {
+            "title": "Skolarn",
+            "description": "Portal profil sekolah interaktif yang menampilkan informasi akademik, galeri kegiatan, dan visi misi institusi dengan desain responsif.",
+            "tech": ["HTML/CSS", "JavaScript"],
+            "colors": { "bg": "bg-orange-50", "text": "text-orange-600", "icon": "??" },
+            "link": "#",
+            "featured": true
+        },
+        {
+            "title": "Perpus Digital",
+            "description": "Sistem manajemen perpustakaan modern dengan fitur CRUD lengkap. Dioptimalkan untuk shared hosting (InfinityFree).",
+            "tech": ["Laravel", "Tailwind"],
+            "colors": { "bg": "bg-indigo-50", "text": "text-indigo-600", "icon": "??" },
+            "link": "http://perpus-digital.infinityfreeapp.com",
+            "featured": false
+        },
+        {
+            "title": "VA-Chatbot",
+            "description": "Chatbot cerdas untuk pencarian data siswa secara real-time. Arsitektur serverless yang cepat dan responsif.",
+            "tech": ["Python Flask", "Vercel"],
+            "colors": { "bg": "bg-green-50", "text": "text-green-600", "icon": "??" },
+            "link": "https://va-xpplg2-chatbot.vercel.app",
+            "featured": false
+        }
+    ],
+    "creative_categories": [
+        {
+            "id": "uiux",
+            "title": "UI/UX Design",
+            "description": "Perancangan antarmuka aplikasi (Wireframe/Mockup) dan prototyping.",
+            "icon": "??",
+            "color": "teal"
+        },
+        {
+            "id": "design",
+            "title": "Desain Grafis",
+            "description": "Poster, Banner, dan Konten Sosial Media untuk berbagai event.",
+            "icon": "??",
+            "color": "purple"
+        },
+        {
+            "id": "ppt",
+            "title": "Media Presentasi",
+            "description": "Desain Slide PowerPoint interaktif untuk keperluan mengajar.",
+            "icon": "??",
+            "color": "pink"
+        },
+        {
+            "id": "modul",
+            "title": "Modul Ajar",
+            "description": "Penyusunan Modul Ajar dan Job Sheet praktikum siswa SMK.",
+            "icon": "??",
+            "color": "blue"
+        }
+    ],
+    "galleries": {
+        "uiux": [
+            { "title": "Redesign App E-Learning", "desc": "Studi kasus UX dan High-Fidelity Design.", "link": "#" },
+            { "title": "Wireframe Website Sekolah", "desc": "Perancangan struktur layout website.", "link": "#" }
+        ],
+        "design": [
+            { "title": "Poster Webinar IT", "desc": "Desain visual untuk event nasional.", "link": "https://behance.net/..." },
+            { "title": "Social Media Feeds", "desc": "Konten edukasi pemrograman.", "link": "#" }
+        ],
+        "ppt": [
+            { "title": "Dasar Algoritma", "desc": "Slide interaktif materi logika pemrograman.", "link": "#" },
+            { "title": "Sejarah Komputer", "desc": "Presentasi visual timeline teknologi.", "link": "#" }
+        ],
+        "modul": [
+            { "title": "Modul Pemrograman Web", "desc": "Bahan ajar kelas X SMK.", "link": "#" },
+            { "title": "Jobsheet Basis Data", "desc": "Panduan praktikum MySQL.", "link": "#" }
+        ]
+    }
+}
