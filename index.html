@@ -158,17 +158,13 @@
                     const featuredBadge = project.featured ? `<div class="absolute top-4 right-4 bg-[#d25353] text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">Featured</div>` : "";
                     const techStack = project.tech.map(t => `<span class="px-2 py-1 bg-[#ffead3] text-[#5c2b2b] text-[10px] font-bold uppercase tracking-wider rounded">${t}</span>`).join("");
 
-                    // Check if icon is an image path or emoji (robust check)
-                    const iconLower = project.colors.icon.toLowerCase();
-                    const isImage = iconLower.startsWith('assets/') || 
-                                    iconLower.endsWith('.png') || 
-                                    iconLower.endsWith('.jpg') || 
-                                    iconLower.endsWith('.jpeg') || 
-                                    iconLower.endsWith('.svg');
+                    // Check if icon is an image path or emoji
+                    const iconValue = project.colors.icon;
+                    const isImage = iconValue.includes('/') || iconValue.includes('.'); // Simplest robust check
 
                     const iconContent = isImage 
-                        ? `<img src="${project.colors.icon}" alt="${project.title}" class="w-full h-full object-cover">`
-                        : `<span class="text-6xl text-[#d25353]">${project.colors.icon}</span>`;
+                        ? `<img src="${iconValue}" alt="${project.title}" class="w-full h-full object-cover">`
+                        : `<span class="text-6xl text-[#d25353]">${iconValue}</span>`;
 
                     const html = `
                     <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-500 flex flex-col border border-[#ea7b7b]/20 relative transform hover:-translate-y-2">

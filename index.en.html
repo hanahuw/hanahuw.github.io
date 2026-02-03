@@ -161,10 +161,12 @@
                     const techStack = project.tech.map(t => `<span class="px-2 py-1 bg-[#ffead3] text-[#5c2b2b] text-[10px] font-bold uppercase tracking-wider rounded">${t}</span>`).join("");
 
                     // Check if icon is an image path or emoji
-                    const isImage = project.colors.icon.includes('/') || project.colors.icon.includes('.');
+                    const iconValue = project.colors.icon;
+                    const isImage = iconValue.includes('/') || iconValue.includes('.');
+
                     const iconContent = isImage 
-                        ? `<img src="${project.colors.icon}" alt="${project.title_en || project.title}" class="w-full h-full object-cover">`
-                        : `<span class="text-6xl text-[#d25353]">${project.colors.icon}</span>`;
+                        ? `<img src="${iconValue}" alt="${project.title_en || project.title}" class="w-full h-full object-cover">`
+                        : `<span class="text-6xl text-[#d25353]">${iconValue}</span>`;
 
                     // Use title_en (if exists) and description_en
                     const title = project.title_en || project.title;
