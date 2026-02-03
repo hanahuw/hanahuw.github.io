@@ -3,11 +3,13 @@
         "name": "Hanahuwaida",
         "role": "Software Developer",
         "tagline": "Membangun Solusi Digital yang Bermanfaat.",
-        "cv_link": "#",
+        "tagline_en": "Building Beneficial Digital Solutions.",
+        "cv_link": "https://drive.google.com/file/d/1sSZn6tpb52aDsj2rIeALJ8Qb5NqZO-B_/view?usp=sharing",
         "bio": "Lulusan Pendidikan Informatika UNJ dengan pengalaman dalam pendidikan vokasi dan pengembangan web. Saya menggabungkan fungsionalitas dan kebutuhan pengguna dalam setiap baris kode.",
+        "bio_en": "A graduate of UNJ Informatics Education with experience in vocational education and web development. I combine functionality and user needs in every line of code.",
         "social": {
             "whatsapp": "http://wa.me/6285156854316",
-            "email": "mailto:email@example.com",
+            "email": "mailto:han.huwaida@gmail.com",
             "github": "https://github.com/hanahuw",
             "behance": "http://behance.net/hanahuw",
             "linkedin": "#"
@@ -17,25 +19,29 @@
         {
             "title": "Skolarn",
             "description": "Portal profil sekolah interaktif yang menampilkan informasi akademik, galeri kegiatan, dan visi misi institusi dengan desain responsif.",
-            "tech": ["HTML/CSS", "JavaScript"],
-            "colors": { "bg": "bg-orange-50", "text": "text-orange-600", "icon": "??" },
-            "link": "#",
+            "description_en": "Interactive school profile portal displaying academic information, activity galleries, and institutional vision and mission with a responsive design.",
+            "tech": ["HTML/CSS", "JavaScript", "PHP"],
+            "colors": { "bg": "bg-white", "text": "text-theme-dark", "icon": "assets/skolarn.png" },
+            "link": "https://skolarn.page.gd/",
             "featured": true
         },
         {
             "title": "Perpus Digital",
+            "title_en": "Digital Library",
             "description": "Sistem manajemen perpustakaan modern dengan fitur CRUD lengkap. Dioptimalkan untuk shared hosting (InfinityFree).",
+            "description_en": "Modern library management system with complete CRUD features. Optimized for shared hosting (InfinityFree).",
             "tech": ["Laravel", "Tailwind"],
-            "colors": { "bg": "bg-indigo-50", "text": "text-indigo-600", "icon": "??" },
-            "link": "http://perpus-digital.infinityfreeapp.com",
+            "colors": { "bg": "bg-white", "text": "text-theme-dark", "icon": "assets/perpus-digital.png" },
+            "link": "https://perpus-digital.gt.tc/",
             "featured": false
         },
         {
             "title": "VA-Chatbot",
             "description": "Chatbot cerdas untuk pencarian data siswa secara real-time. Arsitektur serverless yang cepat dan responsif.",
+            "description_en": "Smart chatbot for real-time student data retrieval. Fast and responsive serverless architecture.",
             "tech": ["Python Flask", "Vercel"],
-            "colors": { "bg": "bg-green-50", "text": "text-green-600", "icon": "??" },
-            "link": "https://va-xpplg2-chatbot.vercel.app",
+            "colors": { "bg": "bg-white", "text": "text-theme-dark", "icon": "assets/va-chatbot.png" },
+            "link": "https://briva-xpplg2.vercel.app/",
             "featured": false
         }
     ],
@@ -43,48 +49,104 @@
         {
             "id": "uiux",
             "title": "UI/UX Design",
+            "title_en": "UI/UX Design",
             "description": "Perancangan antarmuka aplikasi (Wireframe/Mockup) dan prototyping.",
+            "description_en": "Application interface design (Wireframe/Mockup) and prototyping.",
             "icon": "??",
-            "color": "teal"
+            "color": "theme-secondary"
         },
         {
             "id": "design",
             "title": "Desain Grafis",
+            "title_en": "Graphic Design",
             "description": "Poster, Banner, dan Konten Sosial Media untuk berbagai event.",
+            "description_en": "Posters, Banners, and Social Media Content for various events.",
             "icon": "??",
-            "color": "purple"
+            "color": "theme-secondary"
         },
         {
             "id": "ppt",
             "title": "Media Presentasi",
+            "title_en": "Presentation Media",
             "description": "Desain Slide PowerPoint interaktif untuk keperluan mengajar.",
+            "description_en": "Interactive PowerPoint Slide designs for teaching purposes.",
             "icon": "??",
-            "color": "pink"
+            "color": "theme-secondary"
         },
         {
             "id": "modul",
             "title": "Modul Ajar",
+            "title_en": "Teaching Modules",
             "description": "Penyusunan Modul Ajar dan Job Sheet praktikum siswa SMK.",
+            "description_en": "Preparation of Teaching Modules and Job Sheets for vocational high school students' practicum.",
             "icon": "??",
-            "color": "blue"
+            "color": "theme-secondary"
         }
     ],
     "galleries": {
         "uiux": [
-            { "title": "Redesign App E-Learning", "desc": "Studi kasus UX dan High-Fidelity Design.", "link": "#" },
-            { "title": "Wireframe Website Sekolah", "desc": "Perancangan struktur layout website.", "link": "#" }
+            { 
+                "title": "Redesign App E-Learning", 
+                "title_en": "Redesign App E-Learning", 
+                "desc": "Studi kasus UX dan High-Fidelity Design.", 
+                "desc_en": "UX study case and High-Fidelity Design.", 
+                "link": "#" 
+            },
+            { 
+                "title": "Wireframe Website Sekolah", 
+                "title_en": "School Website Wireframe", 
+                "desc": "Perancangan struktur layout website.", 
+                "desc_en": "Layout structure design for website.", 
+                "link": "#" 
+            }
         ],
         "design": [
-            { "title": "Poster Webinar IT", "desc": "Desain visual untuk event nasional.", "link": "https://behance.net/..." },
-            { "title": "Social Media Feeds", "desc": "Konten edukasi pemrograman.", "link": "#" }
+            { 
+                "title": "Poster Webinar IT", 
+                "title_en": "IT Webinar Poster", 
+                "desc": "Desain visual untuk event nasional.", 
+                "desc_en": "Visual design for national event.", 
+                "link": "https://behance.net/..." 
+            },
+            { 
+                "title": "Social Media Feeds", 
+                "title_en": "Social Media Feeds", 
+                "desc": "Konten edukasi pemrograman.", 
+                "desc_en": "Programming education content.", 
+                "link": "#" 
+            }
         ],
         "ppt": [
-            { "title": "Dasar Algoritma", "desc": "Slide interaktif materi logika pemrograman.", "link": "#" },
-            { "title": "Sejarah Komputer", "desc": "Presentasi visual timeline teknologi.", "link": "#" }
+            { 
+                "title": "Dasar Algoritma", 
+                "title_en": "Basic Algorithm", 
+                "desc": "Slide interaktif materi logika pemrograman.", 
+                "desc_en": "Interactive slides for programming logic material.", 
+                "link": "#" 
+            },
+            { 
+                "title": "Sejarah Komputer", 
+                "title_en": "History of Computers", 
+                "desc": "Presentasi visual timeline teknologi.", 
+                "desc_en": "Visual presentation of technology timeline.", 
+                "link": "#" 
+            }
         ],
         "modul": [
-            { "title": "Modul Pemrograman Web", "desc": "Bahan ajar kelas X SMK.", "link": "#" },
-            { "title": "Jobsheet Basis Data", "desc": "Panduan praktikum MySQL.", "link": "#" }
+            { 
+                "title": "Modul Pemrograman Web", 
+                "title_en": "Web Programming Module", 
+                "desc": "Bahan ajar kelas X SMK.", 
+                "desc_en": "Teaching materials for 10th-grade vocational high school.", 
+                "link": "#" 
+            },
+            { 
+                "title": "Jobsheet Basis Data", 
+                "title_en": "Database Jobsheet", 
+                "desc": "MySQL practicum guide.", 
+                "desc_en": "MySQL practicum guide.", 
+                "link": "#" 
+            }
         ]
     }
 }

@@ -8,92 +8,95 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: "Plus Jakarta Sans", sans-serif; }
-        .nav-active { color: #4f46e5; font-weight: 700; }
+        .nav-active { color: #d25353; font-weight: 700; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-[#ffead3] text-[#5c2b2b]">
 
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b transition-all duration-300" id="navbar">
+    <!-- NAVBAR -->
+    <nav class="fixed w-full z-50 bg-[#ffead3]/90 backdrop-blur-md border-b border-[#ea7b7b]/30 transition-all duration-300" id="navbar">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#home" class="text-xl font-extrabold text-indigo-600 tracking-tight" id="nav-logo">Hanahuwaida.</a>
-            <div class="hidden md:flex space-x-8 font-medium text-slate-600">
-                <a href="#home" class="nav-link hover:text-indigo-600 transition">Beranda</a>
-                <a href="#about" class="nav-link hover:text-indigo-600 transition">Tentang</a>
-                <a href="#projects" class="nav-link hover:text-indigo-600 transition">Web Apps</a>
-                <a href="#creative" class="nav-link hover:text-indigo-600 transition">Creative</a>
-                <a href="index.en.html" class="bg-indigo-500 text-white px-5 py-2 rounded-full hover:bg-indigo-600 transition">English</a>
-                <a href="#contact" class="bg-indigo-600 text-white px-5 py-2 rounded-full hover:bg-indigo-700 transition">Kontak</a>
+            <a href="#home" class="text-xl font-extrabold text-[#9e3b3b] tracking-tight" id="nav-logo">Hanahuwaida.</a>
+            <div class="hidden md:flex space-x-8 font-medium text-[#d25353] items-center">
+                <a href="#home" class="nav-link hover:text-[#9e3b3b] transition">Beranda</a>
+                <a href="#about" class="nav-link hover:text-[#9e3b3b] transition">Tentang</a>
+                <a href="#projects" class="nav-link hover:text-[#9e3b3b] transition">Web Apps</a>
+                <a href="#creative" class="nav-link hover:text-[#9e3b3b] transition">Creative</a>
+                <a href="index.en.html" class="px-2 py-1 rounded-full hover:opacity-80 transition"><img src="assets/flag_en.png" alt="English" class="h-6 w-6 rounded-full object-cover"></a>
+                <a href="#contact" class="bg-[#ea7b7b] text-white px-5 py-2 rounded-full hover:bg-[#d25353] transition shadow-md">Kontak</a>
             </div>
         </div>
     </nav>
 
-    <section id="home" class="pt-32 pb-20 px-6 min-h-screen flex items-center justify-center">
+    <!-- HERO SECTION -->
+    <section id="home" class="pt-32 pb-20 px-6 min-h-screen flex items-center justify-center bg-[#ffead3]">
         <div class="max-w-4xl mx-auto text-center">
-            <span class="bg-indigo-50 text-indigo-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-4 inline-block">Education & Web Development</span>
-            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight text-slate-900 leading-tight" id="hero-tagline">
+            <span class="bg-white/60 text-[#d25353] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest mb-4 inline-block border border-[#ea7b7b]/20">Education & Web Development</span>
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight text-[#9e3b3b]" style="line-height: 1.3;" id="hero-tagline">
                 Loading...
             </h1>
-            <p class="text-lg text-slate-600 max-w-2xl mx-auto mb-10 leading-relaxed" id="hero-bio">
+            <p class="text-lg text-[#5c2b2b] max-w-2xl mx-auto mb-10 leading-relaxed" class="text-[#78716c]" id="hero-bio">
                 Loading...
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
-                <a href="#projects" class="bg-slate-900 text-white px-8 py-3 rounded-full font-bold hover:bg-slate-800 transition shadow-lg shadow-slate-200">Lihat Portfolio</a>
+                <a href="#projects" class="bg-[#d25353] text-white px-8 py-3 rounded-full font-bold hover:bg-[#9e3b3b] transition shadow-lg shadow-[#ea7b7b]/20">Lihat Portfolio</a>
                 
                 <!-- TOMBOL UNDUH CV -->
-                <a href="#" id="hero-cv" target="_blank" class="bg-indigo-600 text-white px-8 py-3 rounded-full font-bold hover:bg-indigo-700 transition shadow-lg shadow-indigo-100 flex items-center justify-center">
+                <a href="#" id="hero-cv" target="_blank" class="bg-[#ea7b7b] text-white px-8 py-3 rounded-full font-bold hover:bg-[#d25353] transition shadow-lg shadow-[#ea7b7b]/20 flex items-center justify-center">
                     <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                     Unduh CV
                 </a>
 
-                <a href="#contact" class="bg-white border border-slate-200 text-slate-700 px-8 py-3 rounded-full font-bold hover:bg-slate-50 transition">Hubungi Saya</a>
+                <a href="#contact" class="bg-white/80 border border-[#ea7b7b] text-[#d25353] px-8 py-3 rounded-full font-bold hover:bg-white transition">Hubungi Saya</a>
             </div>
         </div>
     </section>
 
-    <!-- About Section Static Structure -->
+    <!-- ABOUT SECTION -->
     <section id="about" class="py-20 bg-white px-6">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div class="relative">
-                <div class="absolute -top-4 -left-4 w-24 h-24 bg-indigo-100 rounded-full blur-xl opacity-70"></div>
-                <div class="relative bg-slate-50 p-8 rounded-3xl border border-slate-100">
-                    <h3 class="text-2xl font-bold mb-4">Latar Belakang</h3>
-                    <p class="text-slate-600 leading-relaxed mb-4">
+                <div class="absolute -top-4 -left-4 w-24 h-24 bg-[#ea7b7b]/20 rounded-full blur-xl opacity-70"></div>
+                <div class="relative bg-[#ffead3]/30 p-8 rounded-3xl border border-[#ea7b7b]/20">
+                    <h3 class="text-2xl font-bold mb-4 text-[#9e3b3b]">Latar Belakang</h3>
+                    <p class="text-[#5c2b2b] leading-relaxed mb-4">
                         Saya memiliki pengalaman terlibat dalam berbagai proyek pengembangan website dan solusi digital. Fokus utama saya adalah menciptakan karya yang memadukan kejelasan fungsi dan estetika.
                     </p>
-                    <p class="text-slate-600 leading-relaxed">
+                    <p class="text-[#5c2b2b] leading-relaxed">
                         Saat ini, saya sedang menempuh pendidikan Magister untuk memperdalam pemahaman saya tentang teknologi pendidikan dan pengembangan sistem.
                     </p>
                 </div>
             </div>
             <div>
-                <h2 class="text-3xl font-bold mb-6">Pendidikan & Pengalaman</h2>
-                <ul class="space-y-6 border-l-2 border-slate-200 pl-6 relative">
+                <h2 class="text-3xl font-bold mb-6 text-[#9e3b3b]">Pendidikan & Pengalaman</h2>
+                <ul class="space-y-6 border-l-2 border-[#ea7b7b]/30 pl-6 relative">
                     <li class="relative">
-                        <div class="absolute -left-[31px] bg-white border-2 border-indigo-600 w-4 h-4 rounded-full mt-1.5"></div>
-                        <h4 class="font-bold text-lg">Magister Pendidikan Informatika</h4>
-                        <p class="text-indigo-600 font-semibold">Pascasarjana (On-going)</p>
-                        <p class="text-slate-500 text-sm mt-1">Fokus pada teknologi pembelajaran lanjut dan rekayasa perangkat lunak.</p>
+                        <div class="absolute -left-[31px] bg-white border-2 border-[#ea7b7b] w-4 h-4 rounded-full mt-1.5"></div>
+                        <h4 class="font-bold text-lg text-[#9e3b3b]">Magister Pendidikan Informatika</h4>
+                        <p class="text-[#d25353] font-semibold">Pascasarjana (On-going)</p>
+                        <p class="text-[#5c2b2b]/80 text-sm mt-1">Fokus pada teknologi pembelajaran lanjut dan rekayasa perangkat lunak.</p>
                     </li>
                     <li class="relative">
                         <div class="absolute -left-[31px] bg-slate-200 w-4 h-4 rounded-full mt-1.5"></div>
-                        <h4 class="font-bold text-lg">Pendidikan Informatika (S1)</h4>
-                        <p class="text-slate-600 font-semibold">Universitas Negeri Jakarta</p>
+                        <h4 class="font-bold text-lg text-[#9e3b3b]">Pendidikan Informatika (S1)</h4>
+                        <p class="text-[#5c2b2b] font-semibold">Universitas Negeri Jakarta</p>
                     </li>
                     <li class="relative">
                         <div class="absolute -left-[31px] bg-slate-200 w-4 h-4 rounded-full mt-1.5"></div>
-                        <h4 class="font-bold text-lg">Web Development & Teaching</h4>
-                        <p class="text-slate-600 font-semibold">Pengalaman Profesional</p>
+                        <h4 class="font-bold text-lg text-[#9e3b3b]">Web Development & Teaching</h4>
+                        <p class="text-[#5c2b2b] font-semibold">Pengalaman Profesional</p>
                     </li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="py-20 bg-slate-50 px-6">
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="py-20 bg-[#ffead3]/30 px-6">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold mb-2 tracking-tight">Pengembangan Web</h2>
-                <p class="text-slate-500">Aplikasi web dan sistem informasi yang telah saya bangun.</p>
+                <h2 class="text-3xl font-bold mb-2 tracking-tight text-[#9e3b3b]">Pengembangan Web</h2>
+                <p class="text-[#d25353]">Aplikasi web dan sistem informasi yang telah saya bangun.</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8" id="web-projects-container">
                 <!-- Content injected by JS -->
@@ -101,11 +104,12 @@
         </div>
     </section>
 
+    <!-- CREATIVE SECTION -->
     <section id="creative" class="py-20 bg-white px-6">
         <div class="max-w-6xl mx-auto">
             <div class="mb-12">
-                <h2 class="text-3xl font-bold mb-2 tracking-tight">Desain & Edukasi</h2>
-                <p class="text-slate-500">Karya desain grafis, media pembelajaran, dan modul ajar.</p>
+                <h2 class="text-3xl font-bold mb-2 tracking-tight text-[#9e3b3b]">Desain & Edukasi</h2>
+                <p class="text-[#d25353]">Karya desain grafis, media pembelajaran, dan modul ajar.</p>
             </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6" id="creative-projects-container">
                 <!-- Content injected by JS -->
@@ -113,16 +117,17 @@
         </div>
     </section>
 
-    <footer id="contact" class="bg-slate-900 text-white py-24 px-6 relative overflow-hidden">
+    <!-- FOOTER -->
+    <footer id="contact" class="bg-[#9e3b3b] text-white pt-24 pb-12 px-6 relative overflow-hidden">
         <div class="max-w-4xl mx-auto text-center relative z-10">
             <h2 class="text-4xl md:text-5xl font-bold mb-6 tracking-tight">Tertarik bekerja sama?</h2>
             <div class="flex flex-wrap justify-center gap-6 mb-16" id="contact-buttons">
                 <!-- Buttons injected by JS -->
             </div>
-            <div class="flex justify-center gap-8 text-2xl text-slate-400" id="social-links">
+            <div class="flex justify-center gap-8 text-2xl text-[#ffead3]" id="social-links">
                 <!-- Links injected by JS -->
             </div>
-            <div class="mt-12 pt-8 border-t border-slate-800 text-slate-500 text-sm">
+            <div class="mt-12 pt-8 border-t border-[#d25353]/30 text-[#ffead3]/60 text-sm">
                 &copy; 2026 <span id="footer-name">Hanahuwaida</span>. All Rights Reserved.
             </div>
         </div>
@@ -130,11 +135,16 @@
 
     <script>
         fetch("data.json")
-            .then(response => response.json())
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
             .then(data => {
                 // Update Profile
-                document.getElementById("nav-logo").innerHTML = `${data.profile.name}<span class="text-slate-900">.</span>`;
-                document.getElementById("hero-tagline").innerHTML = data.profile.tagline.replace("Bermanfaat", `<span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Bermanfaat</span>`);
+                document.getElementById("nav-logo").innerHTML = `${data.profile.name}<span class="text-[#d25353]">.</span>`;
+                document.getElementById("hero-tagline").innerHTML = data.profile.tagline.replace("Bermanfaat", `<span class="text-transparent bg-clip-text bg-gradient-to-r from-[#d25353] to-[#ea7b7b]">Bermanfaat</span>`);
                 document.getElementById("hero-bio").innerText = data.profile.bio;
                 document.getElementById("footer-name").innerText = data.profile.name;
                 
@@ -145,20 +155,32 @@
                 const webContainer = document.getElementById("web-projects-container");
                 webContainer.innerHTML = "";
                 data.web_projects.forEach(project => {
-                    const featuredBadge = project.featured ? `<div class="absolute top-4 right-4 bg-indigo-600 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">Featured</div>` : "";
-                    const techStack = project.tech.map(t => `<span class="px-2 py-1 bg-slate-100 text-slate-700 text-[10px] font-bold uppercase tracking-wider rounded">${t}</span>`).join("");
+                    const featuredBadge = project.featured ? `<div class="absolute top-4 right-4 bg-[#d25353] text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow-lg z-10">Featured</div>` : "";
+                    const techStack = project.tech.map(t => `<span class="px-2 py-1 bg-[#ffead3] text-[#5c2b2b] text-[10px] font-bold uppercase tracking-wider rounded">${t}</span>`).join("");
+
+                    // Check if icon is an image path or emoji (robust check)
+                    const iconLower = project.colors.icon.toLowerCase();
+                    const isImage = iconLower.startsWith('assets/') || 
+                                    iconLower.endsWith('.png') || 
+                                    iconLower.endsWith('.jpg') || 
+                                    iconLower.endsWith('.jpeg') || 
+                                    iconLower.endsWith('.svg');
+
+                    const iconContent = isImage 
+                        ? `<img src="${project.colors.icon}" alt="${project.title}" class="w-full h-full object-cover">`
+                        : `<span class="text-6xl text-[#d25353]">${project.colors.icon}</span>`;
 
                     const html = `
-                    <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-500 flex flex-col border border-slate-100 relative transform hover:-translate-y-2">
+                    <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition duration-500 flex flex-col border border-[#ea7b7b]/20 relative transform hover:-translate-y-2">
                         ${featuredBadge}
-                        <div class="${project.colors.bg} h-56 flex items-center justify-center overflow-hidden group-hover:bg-opacity-80 transition">
-                             <span class="text-6xl">${project.colors.icon}</span>
+                        <div class="bg-[#ffead3]/30 h-56 flex items-center justify-center overflow-hidden border-b border-[#ea7b7b]/10 group-hover:bg-[#ffead3]/50 transition">
+                             ${iconContent}
                         </div>
                         <div class="p-8 flex-grow flex flex-col">
                             <div class="flex flex-wrap gap-2 mb-4">${techStack}</div>
-                            <h3 class="text-2xl font-bold mb-3 ${project.colors.text} transition">${project.title}</h3>
-                            <p class="text-slate-600 mb-6 text-sm line-clamp-3">${project.description}</p>
-                            <a href="${project.link}" target="_blank" class="mt-auto font-bold ${project.colors.text} text-sm flex items-center hover:underline">
+                            <h3 class="text-2xl font-bold mb-3 text-[#9e3b3b] transition">${project.title}</h3>
+                            <p class="text-[#78716c] mb-6 text-sm line-clamp-3">${project.description}</p>
+                            <a href="${project.link}" target="_blank" class="mt-auto font-bold text-[#d25353] text-sm flex items-center hover:underline">
                                 Lihat Demo <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                             </a>
                         </div>
@@ -169,23 +191,35 @@
                 // Render Creative Categories
                 const creativeContainer = document.getElementById("creative-projects-container");
                 creativeContainer.innerHTML = "";
-                const colorMap = {
-                    "purple": "bg-purple-100 text-purple-600",
-                    "pink": "bg-pink-100 text-pink-600",
-                    "blue": "bg-blue-100 text-blue-600",
-                    "teal": "bg-teal-100 text-teal-600"
-                };
                 
+                // Static styling
+                const staticColorClass = "bg-[#ffead3]/30 border border-[#ea7b7b]/20 text-[#d25353]";
+
+                // SVG Icons Mapping based on ID
+                const svgIcons = {
+                    "uiux": `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>`,
+                    "design": `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>`,
+                    "ppt": `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>`,
+                    "modul": `<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>`
+                };
+
                 if(data.creative_categories) {
                     data.creative_categories.forEach(cat => {
-                        const colorClass = colorMap[cat.color] || "bg-gray-100 text-gray-600";
+                        
+                        // Use SVG if available in map, otherwise fallback to existing logic
+                        const iconContent = svgIcons[cat.id] 
+                            ? svgIcons[cat.id]
+                            : (cat.icon.includes('/') || cat.icon.includes('.') 
+                                ? `<img src="${cat.icon}" alt="${cat.title}" class="w-8 h-8 object-contain">` 
+                                : `${cat.icon}`);
+
                         const html = `
-                        <a href="gallery.html?cat=${cat.id}" class="group border border-slate-100 rounded-xl p-6 hover:shadow-lg transition cursor-pointer block text-center sm:text-left">
-                            <div class="w-12 h-12 ${colorClass} rounded-lg flex items-center justify-center mb-4 text-2xl mx-auto sm:mx-0">
-                                ${cat.icon}
+                        <a href="gallery.html?cat=${cat.id}" class="group bg-white border border-[#ea7b7b]/20 rounded-xl p-6 hover:shadow-lg transition cursor-pointer block text-center sm:text-left">
+                            <div class="w-12 h-12 ${staticColorClass} rounded-lg flex items-center justify-center mb-4 text-2xl mx-auto sm:mx-0">
+                                ${iconContent}
                             </div>
-                            <h3 class="font-bold text-lg mb-2 group-hover:text-indigo-600 transition">${cat.title}</h3>
-                            <p class="text-slate-500 text-sm">${cat.description}</p>
+                            <h3 class="font-bold text-lg mb-2 text-[#9e3b3b] group-hover:text-[#d25353] transition">${cat.title}</h3>
+                            <p class="text-[#78716c] text-sm">${cat.description}</p>
                         </a>`;
                         creativeContainer.innerHTML += html;
                     });
@@ -194,8 +228,8 @@
                 // Render Contact
                 const contactDiv = document.getElementById("contact-buttons");
                 contactDiv.innerHTML = `
-                    <a href="${data.profile.social.whatsapp}" target="_blank" class="flex items-center gap-2 bg-green-600 text-white px-6 py-3 rounded-full font-bold hover:bg-green-700 transition"><span>WhatsApp</span></a>
-                    <a href="${data.profile.social.email}" class="flex items-center gap-2 bg-slate-800 text-white px-6 py-3 rounded-full font-bold hover:bg-slate-700 transition border border-slate-700"><span>Email Me</span></a>
+                    <a href="${data.profile.social.whatsapp}" target="_blank" class="flex items-center gap-2 bg-[#ea7b7b] text-white px-6 py-3 rounded-full font-bold hover:bg-[#d25353] transition shadow-lg shadow-[#ea7b7b]/30"><span>WhatsApp</span></a>
+                    <a href="${data.profile.social.email}" class="flex items-center gap-2 bg-[#ffead3] text-[#9e3b3b] px-6 py-3 rounded-full font-bold hover:bg-white transition border border-[#d25353]/30"><span>Email Me</span></a>
                 `;
 
                 const socialDiv = document.getElementById("social-links");
@@ -204,6 +238,10 @@
                     <a href="${data.profile.social.behance}" class="hover:text-white transition">Be</a>
                     <a href="${data.profile.social.linkedin}" class="hover:text-white transition">In</a>
                 `;
+            })
+            .catch(error => {
+                console.error('Error fetching or parsing data.json:', error);
+                document.body.innerHTML = '<div style="font-family: sans-serif; text-align: center; padding: 4rem;"><h1>Error</h1><p>Could not load project data. Please check the browser console for details.</p></div>';
             });
 
         window.addEventListener("scroll", function() {

@@ -8,14 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>body{font-family:"Plus Jakarta Sans",sans-serif}</style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-white text-[#5c2b2b]">
 
-    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b">
+    <nav class="fixed w-full z-50 bg-[#ffead3]/90 border-b border-[#ea7b7b]/30 shadow-sm backdrop-blur-md">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.en.html" class="text-xl font-extrabold text-indigo-600 tracking-tight">Hanahuwaida<span class="text-slate-900">.</span></a>
+            <a href="index.en.html" class="text-xl font-extrabold text-[#9e3b3b] tracking-tight">Hanahuwaida<span class="text-[#9e3b3b]">.</span></a>
             <div class="flex items-center space-x-4">
-                <a href="gallery.html" class="bg-indigo-500 text-white px-5 py-2 rounded-full hover:bg-indigo-600 transition">Bahasa</a>
-                <a href="index.en.html" class="text-slate-600 hover:text-indigo-600 font-medium flex items-center">
+                
+                <a href="index.en.html" class="text-[#d25353] hover:text-[#9e3b3b] font-medium flex items-center">
                     <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
                     Back
                 </a>
@@ -23,11 +23,11 @@
         </div>
     </nav>
 
-    <section class="pt-32 pb-20 px-6 min-h-screen">
+    <section class="bg-[#ffead3]/30 pt-32 pb-20 px-6 min-h-screen">
         <div class="max-w-6xl mx-auto">
             <div class="mb-12">
-                <h1 class="text-4xl font-bold mb-2 capitalize" id="gallery-title">Loading...</h1>
-                <p class="text-slate-500" id="gallery-desc">Displaying selected works collection.</p>
+                <h1 class="text-4xl font-bold mb-2 capitalize text-[#9e3b3b]" id="gallery-title">Loading...</h1>
+                <p class="text-[#78716c]" id="gallery-desc">Displaying selected works collection.</p>
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="gallery-container">
@@ -36,93 +36,66 @@
         </div>
     </section>
 
-    <script>
+    <footer id="contact" class="bg-[#9e3b3b] text-white pt-24 pb-12 px-6 relative overflow-hidden">
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            <div class="mt-12 pt-8 border-t border-[#d25353]/30 text-[#ffead3]/60 text-sm">
+                &copy; 2026 <span id="footer-name">Hanahuwaida</span>. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
     <script>
         // Get Category from URL
         const urlParams = new URLSearchParams(window.location.search);
         const category = urlParams.get("cat");
 
-        // Directly define data as static English content
-        const data = {
-            "creative_categories": [
-                {
-                    "id": "uiux",
-                    "title": "UI/UX Design",
-                    "description": "Application interface design (Wireframe/Mockup) and prototyping.",
-                    "icon": "??",
-                    "color": "teal"
-                },
-                {
-                    "id": "design",
-                    "title": "Graphic Design",
-                    "description": "Posters, Banners, and Social Media Content for various events.",
-                    "icon": "??",
-                    "color": "purple"
-                },
-                {
-                    "id": "ppt",
-                    "title": "Presentation Media",
-                    "description": "Interactive PowerPoint Slide designs for teaching purposes.",
-                    "icon": "??",
-                    "color": "pink"
-                },
-                {
-                    "id": "modul",
-                    "title": "Teaching Modules",
-                    "description": "Preparation of Teaching Modules and Job Sheets for vocational high school students' practicum.",
-                    "icon": "??",
-                    "color": "blue"
+        fetch("data.json")
+            .then(res => res.json())
+            .then(data => {
+                const items = data.galleries[category];
+                const catInfo = data.creative_categories.find(c => c.id === category);
+
+                if (items && catInfo) {
+                    // Use English title/desc if available
+                    document.getElementById("gallery-title").innerText = catInfo.title_en || catInfo.title;
+                    document.getElementById("gallery-desc").innerText = catInfo.description_en || catInfo.description;
+                    
+                    const container = document.getElementById("gallery-container");
+                    container.innerHTML = ""; // Clear loading text
+                    
+                    items.forEach(item => {
+                        const title = item.title_en || item.title;
+                        const desc = item.desc_en || item.desc;
+                        
+                        // Check if item has an image, otherwise use a placeholder with initials
+                        const displayImage = item.image 
+                            ? `<img src="${item.image}" alt="${title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">`
+                            : `<div class="text-[#ea7b7b] text-5xl font-bold opacity-20">${title.charAt(0)}</div>`;
+
+                        const html = `
+                        <div class="group bg-white rounded-xl shadow-sm hover:shadow-lg transition border border-[#ea7b7b]/30 overflow-hidden flex flex-col">
+                            <div class="h-56 bg-[#ffead3]/30 flex items-center justify-center overflow-hidden border-b border-[#ea7b7b]/10">
+                                ${displayImage}
+                            </div>
+                            <div class="p-6 flex-grow flex flex-col">
+                                <h3 class="font-bold text-lg mb-2 text-[#9e3b3b]">${title}</h3>
+                                <p class="text-[#78716c] text-sm mb-4 line-clamp-2">${desc}</p>
+                                <a href="${item.link}" target="_blank" class="mt-auto bg-[#d25353] text-white text-center py-2 rounded-lg text-sm font-bold hover:bg-[#9e3b3b] transition">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>`;
+                        container.innerHTML += html;
+                    });
+                } else {
+                    document.getElementById("gallery-title").innerText = "Category Not Found";
+                    document.getElementById("gallery-container").innerHTML = "<p>Please return to the main page.</p>";
                 }
-            ],
-            "galleries": {
-                "uiux": [
-                    { "title": "Redesign App E-Learning", "desc": "UX study case and High-Fidelity Design.", "link": "#" },
-                    { "title": "School Website Wireframe", "desc": "Layout structure design for website.", "link": "#" }
-                ],
-                "design": [
-                    { "title": "IT Webinar Poster", "desc": "Visual design for national event.", "link": "https://behance.net/..." },
-                    { "title": "Social Media Feeds", "desc": "Programming education content.", "link": "#" }
-                ],
-                "ppt": [
-                    { "title": "Basic Algorithm", "desc": "Interactive slides for programming logic material.", "link": "#" },
-                    { "title": "History of Computers", "desc": "Visual presentation of technology timeline.", "link": "#" }
-                ],
-                "modul": [
-                    { "title": "Web Programming Module", "desc": "Teaching materials for 10th-grade vocational high school.", "link": "#" },
-                    { "title": "Database Jobsheet", "desc": "MySQL practicum guide.", "link": "#" }
-                ]
-            }
-        };
-
-        const items = data.galleries[category];
-        const catInfo = data.creative_categories.find(c => c.id === category);
-
-        if (items && catInfo) {
-            document.getElementById("gallery-title").innerText = catInfo.title;
-            document.getElementById("gallery-desc").innerText = catInfo.description;
-            
-            const container = document.getElementById("gallery-container");
-            items.forEach(item => {
-                const html = `
-                <div class="bg-white rounded-xl shadow-sm hover:shadow-lg transition border border-slate-100 overflow-hidden flex flex-col">
-                    <div class="h-48 bg-slate-100 flex items-center justify-center text-slate-400 text-4xl">
-                        ???
-                    </div>
-                    <div class="p-6 flex-grow flex flex-col">
-                        <h3 class="font-bold text-lg mb-2">${item.title}</h3>
-                        <p class="text-slate-500 text-sm mb-4 line-clamp-2">${item.desc}</p>
-                        <a href="${item.link}" target="_blank" class="mt-auto bg-slate-900 text-white text-center py-2 rounded-lg text-sm font-bold hover:bg-slate-800 transition">
-                            View Details
-                        </a>
-                    </div>
-                </div>`;
-                container.innerHTML += html;
+            })
+            .catch(error => {
+                console.error("Error loading gallery data:", error);
+                document.getElementById("gallery-title").innerText = "Error Loading Data";
             });
-        } else {
-            document.getElementById("gallery-title").innerText = "Category Not Found";
-            document.getElementById("gallery-container").innerHTML = "<p>Please return to the main page.</p>";
-        }
-    </script>
     </script>
 </body>
 </html>
