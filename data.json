@@ -18,8 +18,8 @@
     "web_projects": [
         {
             "title": "Skolarn",
-            "description": "Portal profil sekolah interaktif yang menampilkan informasi akademik, galeri kegiatan, dan visi misi institusi dengan desain responsif.",
-            "description_en": "Interactive school profile portal displaying academic information, activity galleries, and institutional vision and mission with a responsive design.",
+            "description": "Portal profil sekolah berbasis web yang dirancang untuk menampilkan informasi akademik secara terstruktur dan mudah diakses publik. Skolarn menyediakan fitur pengelolaan berita, pengumuman, data guru, serta informasi jumlah dan struktur kelas melalui dashboard admin. Proyek ini berfokus pada kebutuhan sekolah akan website profil yang informatif, ringan, dan mudah dikelola.",
+            "description_en": "A school profile web portal designed to present academic information in a structured and publicly accessible way. Skolarn features an admin dashboard for managing news, announcements, teacher profiles, and class information. This project focuses on providing schools with a lightweight, informative, and easy-to-manage profile website.",
             "tech": ["HTML/CSS", "JavaScript", "PHP"],
             "colors": { "bg": "bg-white", "text": "text-theme-dark", "icon": "assets/skolarn.png" },
             "link": "https://skolarn.page.gd/",
@@ -28,8 +28,8 @@
         {
             "title": "Perpus Digital",
             "title_en": "Digital Library",
-            "description": "Sistem manajemen perpustakaan modern dengan fitur CRUD lengkap. Dioptimalkan untuk shared hosting (InfinityFree).",
-            "description_en": "Modern library management system with complete CRUD features. Optimized for shared hosting (InfinityFree).",
+            "description": "Aplikasi perpustakaan digital sederhana yang dikembangkan menggunakan Laravel sebagai contoh implementasi konsep CRUD (Create, Read, Update, Delete). Proyek ini dibuat sebagai media pembelajaran untuk memperkenalkan alur kerja pengembangan aplikasi web berbasis framework, mulai dari pengelolaan data koleksi hingga struktur MVC yang mudah dipahami oleh siswa.",
+            "description_en": "A simple digital library web application developed using Laravel to demonstrate CRUD (Create, Read, Update, Delete) implementation. This project serves as a learning reference for students to understand web application workflows using a framework, including data management, MVC structure, and basic backend logic.",
             "tech": ["Laravel", "Tailwind"],
             "colors": { "bg": "bg-white", "text": "text-theme-dark", "icon": "assets/perpus-digital.png" },
             "link": "https://perpus-digital.gt.tc/",
@@ -37,8 +37,8 @@
         },
         {
             "title": "VA-Chatbot",
-            "description": "Chatbot cerdas untuk pencarian data siswa secara real-time. Arsitektur serverless yang cepat dan responsif.",
-            "description_en": "Smart chatbot for real-time student data retrieval. Fast and responsive serverless architecture.",
+            "description": "Chatbot sederhana berbasis dataset siswa yang digunakan untuk pencarian nomor Virtual Account (VA) pembayaran. Pengguna dapat memasukkan nama siswa untuk memperoleh informasi VA secara cepat dan akurat. Proyek ini dibuat sebagai tugas perkuliahan dengan fokus pada pemanfaatan chatbot sebagai alat bantu pencarian data spesifik secara real-time.",
+            "description_en": "A simple chatbot application designed to retrieve Virtual Account (VA) payment information based on a predefined student dataset. Users can search for a student’s name to quickly obtain the corresponding VA number. This project was created as a university assignment, focusing on the use of chatbot technology for efficient and real-time data lookup.",
             "tech": ["Python Flask", "Vercel"],
             "colors": { "bg": "bg-white", "text": "text-theme-dark", "icon": "assets/va-chatbot.png" },
             "link": "https://briva-xpplg2.vercel.app/",
