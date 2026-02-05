@@ -18,8 +18,8 @@
     "web_projects": [
         {
             "title": "Skolarn",
-            "description": "Portal profil sekolah berbasis web yang dirancang untuk menampilkan informasi akademik secara terstruktur dan mudah diakses publik. Skolarn menyediakan fitur pengelolaan berita, pengumuman, data guru, serta informasi jumlah dan struktur kelas melalui dashboard admin. Proyek ini berfokus pada kebutuhan sekolah akan website profil yang informatif, ringan, dan mudah dikelola.",
-            "description_en": "A school profile web portal designed to present academic information in a structured and publicly accessible way. Skolarn features an admin dashboard for managing news, announcements, teacher profiles, and class information. This project focuses on providing schools with a lightweight, informative, and easy-to-manage profile website.",
+            "description": "Website profil sekolah yang menampilkan informasi akademik seperti berita, pengumuman, data guru, dan struktur kelas, dengan sistem pengelolaan melalui dashboard admin.",
+            "description_en": "A school profile website that presents academic information such as news, announcements, teacher data, and class structure, managed through an admin dashboard.",
             "tech": ["HTML/CSS", "JavaScript", "PHP"],
             "colors": { "bg": "bg-white", "text": "text-theme-dark", "icon": "assets/skolarn.png" },
             "link": "https://skolarn.page.gd/",
@@ -28,8 +28,8 @@
         {
             "title": "Perpus Digital",
             "title_en": "Digital Library",
-            "description": "Aplikasi perpustakaan digital sederhana yang dikembangkan menggunakan Laravel sebagai contoh implementasi konsep CRUD (Create, Read, Update, Delete). Proyek ini dibuat sebagai media pembelajaran untuk memperkenalkan alur kerja pengembangan aplikasi web berbasis framework, mulai dari pengelolaan data koleksi hingga struktur MVC yang mudah dipahami oleh siswa.",
-            "description_en": "A simple digital library web application developed using Laravel to demonstrate CRUD (Create, Read, Update, Delete) implementation. This project serves as a learning reference for students to understand web application workflows using a framework, including data management, MVC structure, and basic backend logic.",
+            "description": "Aplikasi perpustakaan digital sederhana berbasis Laravel yang digunakan untuk mencontohkan implementasi CRUD dan alur kerja aplikasi web kepada siswa.",
+            "description_en": "A simple Laravel-based digital library application designed to demonstrate CRUD implementation and basic web application workflows.",
             "tech": ["Laravel", "Tailwind"],
             "colors": { "bg": "bg-white", "text": "text-theme-dark", "icon": "assets/perpus-digital.png" },
             "link": "https://perpus-digital.gt.tc/",
@@ -37,8 +37,8 @@
         },
         {
             "title": "VA-Chatbot",
-            "description": "Chatbot sederhana berbasis dataset siswa yang digunakan untuk pencarian nomor Virtual Account (VA) pembayaran. Pengguna dapat memasukkan nama siswa untuk memperoleh informasi VA secara cepat dan akurat. Proyek ini dibuat sebagai tugas perkuliahan dengan fokus pada pemanfaatan chatbot sebagai alat bantu pencarian data spesifik secara real-time.",
-            "description_en": "A simple chatbot application designed to retrieve Virtual Account (VA) payment information based on a predefined student dataset. Users can search for a student’s name to quickly obtain the corresponding VA number. This project was created as a university assignment, focusing on the use of chatbot technology for efficient and real-time data lookup.",
+            "description": "Chatbot sederhana untuk membantu pencarian nomor Virtual Account (VA) pembayaran siswa berdasarkan dataset kelas tertentu.",
+            "description_en": "A simple chatbot that helps retrieve student payment Virtual Account (VA) numbers based on a specific class dataset.",
             "tech": ["Python Flask", "Vercel"],
             "colors": { "bg": "bg-white", "text": "text-theme-dark", "icon": "assets/va-chatbot.png" },
             "link": "https://briva-xpplg2.vercel.app/",
