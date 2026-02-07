@@ -8,14 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>body{font-family:"Plus Jakarta Sans",sans-serif}</style>
 </head>
-<body class="bg-[#FCF5EE] text-[#850E35]">
+<body class="bg-[#FFFFFF] text-[#111111]">
 
-    <nav class="fixed w-full z-50 bg-[#FCF5EE]/90 border-b border-[#FFC4C4]/30 shadow-sm backdrop-blur-md">
+    <nav class="fixed w-full z-50 bg-[#FFFFFF]/90 border-b border-[#E5E5E5]/30 shadow-sm backdrop-blur-md">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-xl font-extrabold text-[#850E35] tracking-tight">Hanahuwaida<span class="text-[#850E35]">.</span></a>
+            <a href="index.html" class="text-xl font-extrabold text-[#111111] tracking-tight">Hanahuwaida<span class="text-[#111111]">.</span></a>
             <div class="flex items-center space-x-4">
                 
-                <a href="index.html" class="text-[#EE6983] hover:text-[#850E35] font-medium flex items-center">
+                <a href="index.html" class="text-[#444444] hover:text-[#111111] font-medium flex items-center">
                     <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
                     Kembali
                 </a>
@@ -23,11 +23,11 @@
         </div>
     </nav>
 
-    <section class="bg-[#FCF5EE]/30 pt-32 pb-20 px-6 min-h-screen">
+    <section class="bg-[#FFFFFF]/30 pt-32 pb-20 px-6 min-h-screen">
         <div class="max-w-6xl mx-auto">
             <div class="mb-12">
-                <h1 class="text-4xl font-bold mb-2 capitalize text-[#850E35]" id="gallery-title">Loading...</h1>
-                <p class="text-[#850E35]/70" id="gallery-desc">Menampilkan koleksi karya terpilih.</p>
+                <h1 class="text-4xl font-bold mb-2 capitalize text-[#111111]" id="gallery-title">Loading...</h1>
+                <p class="text-[#111111]/70" id="gallery-desc">Menampilkan koleksi karya terpilih.</p>
             </div>
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="gallery-container">
@@ -36,9 +36,9 @@
         </div>
     </section>
 
-    <footer id="contact" class="bg-[#850E35] text-white pt-24 pb-12 px-6 relative overflow-hidden">
+    <footer id="contact" class="bg-[#111111] text-white pt-24 pb-12 px-6 relative overflow-hidden">
         <div class="max-w-4xl mx-auto text-center relative z-10">
-            <div class="mt-12 pt-8 border-t border-[#EE6983]/30 text-[#FCF5EE]/60 text-sm">
+            <div class="mt-12 pt-8 border-t border-[#444444]/30 text-[#FFFFFF]/60 text-sm">
                 &copy; 2026 <span id="footer-name">Hanahuwaida</span>. All Rights Reserved.
             </div>
         </div>
@@ -66,17 +66,17 @@
                         // Check if item has an image, otherwise use a placeholder with initials
                         const displayImage = item.image 
                             ? `<img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">`
-                            : `<div class="text-[#EE6983] text-5xl font-bold opacity-20">${item.title.charAt(0)}</div>`;
+                            : `<div class="text-[#444444] text-5xl font-bold opacity-20">${item.title.charAt(0)}</div>`;
 
                         const html = `
-                        <div class="group bg-white rounded-xl shadow-sm hover:shadow-lg transition border border-[#FFC4C4]/30 overflow-hidden flex flex-col">
-                            <div class="h-56 bg-[#FCF5EE]/30 flex items-center justify-center overflow-hidden border-b border-[#FFC4C4]/10">
+                        <div class="group bg-white rounded-xl shadow-sm hover:shadow-lg transition border border-[#E5E5E5]/30 overflow-hidden flex flex-col">
+                            <div class="h-56 bg-[#FFFFFF]/30 flex items-center justify-center overflow-hidden border-b border-[#E5E5E5]/10">
                                 ${displayImage}
                             </div>
                             <div class="p-6 flex-grow flex flex-col">
-                                <h3 class="font-bold text-lg mb-2 text-[#850E35]">${item.title}</h3>
-                                <p class="text-[#850E35]/70 text-sm mb-4 line-clamp-2">${item.desc}</p>
-                                <a href="${item.link}" target="_blank" class="mt-auto bg-[#EE6983] text-white text-center py-2 rounded-lg text-sm font-bold hover:bg-[#850E35] transition">
+                                <h3 class="font-bold text-lg mb-2 text-[#111111]">${item.title}</h3>
+                                <p class="text-[#111111]/70 text-sm mb-4 line-clamp-2">${item.desc}</p>
+                                <a href="${item.link}" target="_blank" class="mt-auto bg-[#444444] text-white text-center py-2 rounded-lg text-sm font-bold hover:bg-[#111111] transition">
                                     Lihat Detail
                                 </a>
                             </div>
