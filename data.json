@@ -52,7 +52,8 @@
             "title_en": "UI/UX Design",
             "description": "Perancangan antarmuka aplikasi (Wireframe/Mockup) dan prototyping.",
             "description_en": "Application interface design (Wireframe/Mockup) and prototyping.",
-            "icon": "??",
+            "icon": "🎨",
+            "link": "https://sites.google.com/view/hanahuwaida/designs/uiux",
             "color": "theme-secondary"
         },
         {
@@ -61,7 +62,8 @@
             "title_en": "Graphic Design",
             "description": "Poster, Banner, dan Konten Sosial Media untuk berbagai event.",
             "description_en": "Posters, Banners, and Social Media Content for various events.",
-            "icon": "??",
+            "icon": "🖼️",
+            "link": "https://sites.google.com/view/hanahuwaida/designs/instagram-posts",
             "color": "theme-secondary"
         },
         {
@@ -70,7 +72,8 @@
             "title_en": "Presentation Media",
             "description": "Desain Slide PowerPoint interaktif untuk keperluan mengajar.",
             "description_en": "Interactive PowerPoint Slide designs for teaching purposes.",
-            "icon": "??",
+            "icon": "📊",
+            "link": "https://sites.google.com/view/hanahuwaida/designs/ppt",
             "color": "theme-secondary"
         },
         {
@@ -79,7 +82,8 @@
             "title_en": "Teaching Modules",
             "description": "Penyusunan Modul Ajar dan Job Sheet praktikum siswa SMK.",
             "description_en": "Preparation of Teaching Modules and Job Sheets for vocational high school students' practicum.",
-            "icon": "??",
+            "icon": "📚",
+            "link": "https://sites.google.com/view/hanahuwaida/teaching-publications",
             "color": "theme-secondary"
         }
     ],
