@@ -149,7 +149,7 @@
             .then(data => {
                 // Update Profile
                 // Use tagline_en
-                document.getElementById("hero-tagline").innerHTML = data.profile.tagline_en.replace("Beneficial", `<span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#E5E5E5]">Beneficial</span>`);
+                document.getElementById("hero-tagline").innerHTML = data.profile.tagline_en.replace("Purpose", `<span class="text-transparent bg-clip-text bg-gradient-to-r from-white to-[#E5E5E5]">Purpose</span>`);
                 // Use bio_en
                 document.getElementById("hero-bio").innerText = data.profile.bio_en;
                 document.getElementById("footer-name").innerText = data.profile.name;
